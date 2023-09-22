@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/requestForm.css">
+    <script src="/js/requestForm.js"></script>
+    <script>
+        window.history.forward();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>TRAVEL REQUESTOR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/pages/requestForm.html">Form</a></li>
+                <li><a href="/pages/useView.html">View Request</a></li>
+                <li style="float: right;"><a href="login.html">
+                        <i class="fa fa-user icon"></i>
+                        <button type="submit" class="btn" onclick="window.location.href = 'login.html';">Log
+                            out</button>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Travel Request Form</h1>
+        <form id="frmRequest">
+            <div class="form-group form-inline">
+                <!--EmpId-->
+                <label for="empId">Emp Id</label>
+                <input type="text" id="txtempId" name="txtempId" placeholder="Employee ID"
+                    class="forminput form-control" style="padding: 10px;">
+                <span id="empIdError" class="error"></span>
+                <!--EmpName-->
+                <label for="empName">Emp Name</label>
+                <input type="text" id="txtempName" name="txtempName" placeholder="Employee Name"
+                    class="forminput form-control">
+                <span id="empNameError" class="error"></span>
+            </div>
+
+
+            <div class="form-group form-inline">
+                <!--Project-->
+                <label for="project">Project</label>
+                <input type="text" id="txtproject" name="txtproject" placeholder="Project"
+                    class="forminput form-control">
+                <span id="projectError" class="error"></span>
+                <!--Cause for Travel-->
+                <label for="cause">Cause for Travel</label>
+                <input type="text" id="txtcause" name="txtcause" placeholder="Cause" class="forminput form-control">
+                <span id="causeError" class="error"></span>
+            </div>
+
+
+            <div class="form-group form-inline">
+                <!--Source-->
+                <label for="source">Source</label>
+                <input type="text" id="txtsource" name="txtsource" placeholder="Source" class="forminput form-control">
+                <span id="sourceError" class="error"></span>
+                <!--Destination-->
+                <label for="destination">Destination</label>
+                <input type="text" id="txtdestination" name="txtdestination" placeholder="Destination"
+                    class="forminput form-control">
+                <span id="destinationError" class="error"></span>
+            </div>
+
+
+            <div class="form-group form-inline">
+                <!--From date-->
+                <label for="fromDate">From Date</label>
+                <input type="Date" id="dteFromDate" name="dteFromDate" class="forminput form-control">
+                <span id="fromDateError" class="error"></span>
+                <!--No of Days-->
+                <label for="noOfDays">No of Days</label>
+                <input type="number" id="numNoOfDays" name="numNoOfDays" class="forminput form-control">
+                <span id="noOfDaysError" class="error"></span>
+                <!--To date-->
+                <label for="fromDate">To Date</label>
+                <input type="Date" id="dteToDate" name="dteToDate" class="forminput form-control">
+                <span id="toDateError" class="error"></span>
+
+            </div>
+
+            <div class="form-group form-inline">
+                <!--Mode of Travel-->
+                <label for="modeOfTravel">Mode of Travel</label>
+                <input type="text" id="txtmodeOfTravel" name="txtmodeOfTravel" placeholder="Mode of Travel"
+                    class="forminput form-control">
+                <span id="modeOfTravelError" class="error"></span>
+
+            </div>
+            <!--Submit-->
+            <div class="btnsubmit">
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <!--Reset-->
+                <input type="reset" class="btn btn-danger" value="Reset">
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

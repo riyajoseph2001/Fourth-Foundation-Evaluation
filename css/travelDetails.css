@@ -1,0 +1,26 @@
+body{
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(14, 107, 14);
+}
+li{
+    float: left;
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover, .dropbtn:hover{
+    color: rgb(241, 92, 38);
+}
+li .dropdown{
+    display: inline-block;
+}

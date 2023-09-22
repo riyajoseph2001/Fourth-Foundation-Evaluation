@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user view</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/userView.css">
+    <script>
+        window.history.forward();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div>
+
+            <h1>TRAVEL REQUESTOR</h1>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/pages/requestForm.html">Form</a></li>
+                <li class="dropdown"><a href="#" class="dropbtn">View</a>
+                    <div class="dropdown-content">
+                        <a href="#">All</a>
+                        <a href="#">Critical</a>
+                        <a href="#">Normal</a>
+                        <a href="#">Rejected</a>
+                    </div>
+                </li>
+                <li style="float: right;"><a href="login.html">
+                        <i class="fa fa-user icon"></i>
+                        <button type="submit" class="btn" onclick="window.location.href = 'login.html';">Log
+                            out</button>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <!--Table for displaying journey details-->
+        <table class="table">
+            <tr class="table-light">
+                <th>Employee Name</th>
+                <th>Destination</th>
+                <th>Priority</th>
+                <th>View Details</th>
+            </tr>
+            <tr class="table-primary">
+                <td>Donald</td>
+                <td>Las Vegas</td>
+                <td>Critical</td>
+                <td><a href="/pages/travelDetails.html">View more</a></td>
+            </tr>
+            <tr class="table-info">
+                <td>Aswathy</td>
+                <td>Delhi</td>
+                <td>Normal</td>
+                <td><a href="#">View more</a></td>
+            </tr>
+            <tr class="table-success">
+                <td>Franco</td>
+                <td>Kochi</td>
+                <td>Normal</td>
+                <td><a href="#">View more</a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Color indicators for each row -->
+    <div class="color-indicator" style="padding-top: 10px; padding-left: 20px;">
+        <div class="table-primary" style="width: 30px; height:30px; "></div> Approved
+        <div class="table-info" style="width: 30px; height:30px;"></div> On hold
+        <div class="table-success" style="width: 30px; height:30px;"></div> Reject
+    </div>
+</body>
+
+</html>

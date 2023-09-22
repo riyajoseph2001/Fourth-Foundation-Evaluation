@@ -1,0 +1,59 @@
+body{
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(14, 107, 14);
+}
+li{
+    float: left;
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover, .dropbtn:hover{
+    color: rgb(241, 92, 38);
+}
+li .dropdown{
+    display: inline-block;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+.admintable{
+    margin-top:30px;
+    margin-left: 20px;
+
+}
+.form-group{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.logoutbtn{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+}
+h1{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    
+}
+.menu{
+    display: contents;
+}
+.btn{
+    text-align: right;
+}
